@@ -8,3 +8,5 @@
 ---
 # Реализация проекта:
 - 01.11 – создана структура проекта
+# Ссылка на макет
+-https://www.figma.com/design/Oba2QZkVj9iECHjdmvXauB/Untitled?node-id=0-1&node-type=canvas
