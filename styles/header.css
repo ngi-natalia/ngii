@@ -1,0 +1,21 @@
+.menu {
+    margin: 0;
+    padding: 10;
+    list-style-type: none;
+    display: flex;
+    flex-wrap: wrap;
+   }
+.menu__link{
+    display: block;
+    padding: 10px;
+    margin: 5px;
+    background-color: rgb(254, 251, 241, 1);
+    color: rgb(112, 52, 18, 1);
+    text-decoration: none;
+   }
+.header {
+    display: flex;
+    justify-content: space-between;
+    padding-top: 20px;
+    padding-bottom: 20px;
+}   
