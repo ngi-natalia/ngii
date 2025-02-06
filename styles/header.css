@@ -19,6 +19,7 @@ nav {
     justify-content: center;
     gap: 2rem;
     list-style: none;
+    flex-wrap: wrap;
 }
 
 .nav-links a {
@@ -36,4 +37,5 @@ nav {
     align-items: center;
     gap: 0.5rem;
     justify-content: space-between;
+    flex-wrap: wrap;
 }

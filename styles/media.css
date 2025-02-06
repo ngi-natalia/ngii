@@ -1,0 +1,15 @@
+@media only screen and (max-width:768px) {
+    body{
+        background-color: #fff9fb;
+    }
+
+    .container {
+        flex-direction: column;
+    }
+
+    .menu_link {
+        padding: 12px;
+        margin: 10px;
+    }
+
+}
