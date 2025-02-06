@@ -5,12 +5,57 @@ box-sizing: border-box;
 }
 html,
 body {
-font-family: 'Roboto';
+font-family: 'Montserrat';
 font-size: 18px;
 line-height: 30px;
 color: #703412;
-background-color: #FEFBF1;
+background-color: #fff9fb;
 overflow-x: hidden;
+}
+:root {
+    --pastel-pink: #FFD6D6;
+    --pastel-green: #E3F0E1;
+    --pastel-lavender: #E3E3F3;
+    --pastel-peach: #FFE5B4;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Montserrat', "Regular";
+}
+ /* Utility Classes */
+ .btn {
+    padding: 0.8rem 1.5rem;
+    border-radius: 25px;
+    border: none;
+    background-color: #6b8e7e;
+    color: white;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+    margin-top: 1rem;
+}
+
+.btn:hover {
+    background-color: #5a7a6d;
+}
+
+.search-bar {
+    padding: 0.8rem;
+    border-radius: 25px;
+    border: 1px solid #ccc;
+    width: 300px;
+    margin-right: 1rem;
+}
+
+/* Cart Counter */
+.cart-counter {
+    background-color: #e91e63;
+    padding: 0.2rem 0.5rem;
+    border-radius: 50%;
+    font-size: 0.8rem;
+    margin-left: 0.5rem;
 }
 img {
 display: block;

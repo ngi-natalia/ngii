@@ -6,100 +6,179 @@
     <title>Document</title>
     <link rel="stylesheet" href="styles/normalize.css">
     <link rel="stylesheet" href="styles/style.css">
-</head>
-<body>
-<nav>
-    <ul class="menu" container>
-        <li class="menu_item"><a href="#">Blog</a></li> 
-        <li class="menu_item"><a href="#">Press</a></li> 
-        <li class="menu_item"><a href="#">Join Us</a></li>
-    </ul>
-</nav>
-<main class="main" container>
-    <section>
-        <div class="text">
-            <p6 class="=header_text">BUSINESS thoughts 💭</p6>
-        </div>
-        <header class="title">
-            <h2 class="header_title">For founders on <br> building, growing, and <br> selling your brand.</h2>
-        </header>
-        <div class="text">
-            <p4 class="=header_text">Explore the brands joining Pattern <br> Brands, the sales process & the <br> founders behind them.👇🏽</p4>
-        </div>
-        <ul class="images">
-            <li class="image"><img src="images/1.png" alt="Завтрак" width="312" height="312">
-                <h5 class="subtitle">GIR: One Year In</h5>
-                <p6 class="subtitle_min">Case Study</p6>
-            </li>
-            <li class="image"><img src="images/2.png" alt="Аксессуары" width="312" height="312">
-                <h5 class="subtitle">Introducing Onsen</h5>
-                <p6 class="subtitle_min">new additions</p6>
-            </li>
-            <li class="image"><img src="images/3.png" alt="Текст1" width="312" height="312">
-                <h5 class="subtitle">Selling Your Shopify Brand: An Introduction</h5>
-                <p6 class="subtitle_min">Mergers & Acquisitions 101</p6>
-            </li>
-            <li class="image"><img src="images/4.png" alt="НГ23" width="312" height="312">
-                <h5 class="subtitle">5 Reasons We Are Optimistic for 2023</h5>
-                <p6 class="subtitle_min">MERGERS & ACQUISITIONS 101</p6>
-            </li>
-            <li class="image"><img src="images/5.png" alt="Часы" width="312" height="312">
-                <h5 class="subtitle">Why Right Now is a Great Time to Sell Your Brand</h5>
-                <p6 class="subtitle_min">MERGERS & ACQUISITIONS 101</p6>
-            </li>
-            <li class="image"><img src="images/6.png" alt="Текст2" width="312" height="312">
-                <h5 class="subtitle">Selling Your Shopify Brand: Week 1</h5>
-                <p6 class="subtitle_min">MERGERS & ACQUISITIONS 101</p6>
-            </li>
-            <li class="image"><img src="images/7.png" alt="Миниатюра" width="312" height="312">
-                <h5 class="subtitle">Pattern's 2022 Update</h5>
-                <p6 class="subtitle_min">THOUGHT LEADERSHIP</p6>
-            </li>
-            <li class="image"><img src="images/8.png" alt="Чай" width="312" height="312">
-                <h5 class="subtitle">Introducing Yield</h5>
-                <p6 class="subtitle_min">New Additions</p6>
-            </li>
-            <li class="image"><img src="images/9.png" alt="Книги" width="312" height="312">
-                <h5 class="subtitle">Introducing Poketo</h5>
-                <p6 class="subtitle_min">New Additions</p6>
-            </li>
-        </ul>
-        <div class="text">
-            <h5 class="text">CONTACT</h5>
-        </div>
-        <div class="text">
-            <p3 class="text">We're focused on building brands and a better future. <br> If you'd like to partner with us, we're here to talk.</p3>
-        </div>
-        </section>
-</main>
-<footer class="footer" container>
-    <ul class="menu">
-        <li class="menu_item"><a href="#">Open Spaces</a></li>
-        <li class="menu_item"><a href="#">HGIR</a></li>
-        <li class="menu_item"><a href="#">Letterfolk</a></li>
-        <li class="menu_item"><a href="#">Yield</a></li>
-        <li class="menu_item"><a href="#">Poketo</a></li>
-        <li class="menu_item"><a href="#">Equal Parts</a></li>
-    </ul>
-    <ul class="menu">
-        <li class="menu_item"><a href="#">Careers</a></li>
-        <li class="menu_item"><a href="#">Press</a></li>
-    </ul>
-    <ul class="menu_link">
-        <li class="menu_item"><a href="#">VK</a></li>
-        <li class="menu_item"><a href="#">Telegram</a></li>
-    </ul>
-    <ul class="contact">
-        <li>
-            <p6 class="=header_contact">Машиностроителей 15</p6>
-            <p6 class="=header_contact">Йошкар-Ола</p6>
-        </li>
-        <li>
-            <p6 class="=header_contact">Гродикова Наталья</p6>
-            <p6 class="=header_contact">Качмашева Татьяна</p6>
-            <p6 class="=header_contact">Айглова Ангелина</p6>
-        </li>
-    </ul>
-</footer>
-</body>
-</html>
+        <body>
+            <header  class="header">
+                <div class="logo">
+                    <img src="images/logo.png" width="100" height="100" alt="logo"> Бутоника
+                </div>
+                <div class="header-actions">
+                    <input type="text" class="search-bar" placeholder="Поиск...">
+                    <button class="btn">Войти</button>
+                    <button class="btn">Корзина <span class="cart-counter">0</span></button>
+                </div>
+            </header>
+        
+            <nav>
+                <ul class="nav-links">
+                    <li><a href="#product-grid">Главная</a></li>
+                    <li><a href="#product-grid">Каталог</a></li>
+                    <li><a href="#bouquets-to-order">Букеты на заказ</a></li>
+                    <li><a href="#Holiday-bouquets">Праздничные букеты</a></li>
+                    <li><a href="#payment-options">Способы оплаты</a></li>
+                    <li><a href="#contact">Контакты</a></li>
+                </ul>
+            </nav>
+        
+            <main>
+                <section class="product-grid">
+
+                    <div class="product-card">
+                        <img src="images/roses.JPG" alt="Букет Роз" class="product-image">
+                        <h3>Розы</h3>
+                        <div class="price">от 2800 ₽</div>
+                        <div class="availability">В ассортименте</div>
+                        <button class="btn">Добавить в корзину</button>
+                    </div>
+
+                    <div class="product-card">
+                        <img src="images/peonies.JPG" alt="Букет пионов" class="product-image">
+                        <h3>Букет розовых пионов</h3>
+                        <div class="price">от 3500 ₽</div>
+                        <div class="availability">В ассортименте</div>
+                        <button class="btn">Добавить в корзину</button>
+                    </div>
+
+                    <div class="product-card">
+                        <img src="images/tulips.JPG" alt="Тюльпаны" class="product-image">
+                        <h3>Тюльпаны</h3>
+                        <div class="price">от 1800 ₽</div>
+                        <div class="availability">В ассортименте</div>
+                        <button class="btn">Добавить в корзину</button>
+                    </div>
+
+                    <div class="product-card">
+                        <img src="images/succulents.JPG" alt="Растения в горшках и суккуленты" class="product-image">
+                        <h3>Растения в горшках и суккуленты</h3>
+                        <div class="price">от 220 ₽</div>
+                        <div class="availability">В ассортименте</div>
+                        <button class="btn">Добавить в корзину</button>
+                    </div>
+
+                    <div class="product-card">
+                        <img src="images/chocolate.JPG" alt="Шоколадный букет" class="product-image">
+                        <h3>Шоколадный букет</h3>
+                        <div class="price">от 2200 ₽</div>
+                        <div class="availability">В ассортименте</div>
+                        <button class="btn">Добавить в корзину</button>
+                    </div>
+
+                    <div class="product-card">
+                        <img src="images/bear.JPG" alt="Плюшевый мишка" class="product-image">
+                        <h3>Плюшевый мишка</h3>
+                        <div class="price">от 1200 ₽</div>
+                        <div class="availability">В ассортименте</div>
+                        <button class="btn">Добавить в корзину</button>
+                    </div>
+                </section>
+                <section class="payment-options">
+                    <h2> Букеты на заказ</h2>
+                </section>
+                <section class="bouquets-to-order">
+                    <div class="order-card">
+                        <img src="images/single.JPG" alt="Один вид" class="product-image">
+                        <h3>Один вид</h3>
+                        <div class="price">от 200 ₽</div>
+                        <div class="availability">В ассортименте</div>
+                        <button class="btn">Добавить в корзину</button>
+                    </div>
+                    <div class="order-card">
+                        <img src="images/mix.JPG" alt="Микс" class="product-image">
+                        <h3>Микс</h3>
+                        <div class="price">от 1400 ₽</div>
+                        <div class="availability">В ассортименте</div>
+                        <button class="btn">Добавить в корзину</button>
+                    </div>
+                    <div class="order-card">
+                        <img src="images/in-box.JPG" alt="В коробке" class="product-image">
+                        <h3>В коробке</h3>
+                        <div class="price">от 2000 ₽</div>
+                        <div class="availability">В ассортименте</div>
+                        <button class="btn">Добавить в корзину</button>
+                    </div>
+                </section>
+                <section class="payment-options">
+                    <h2> Праздничные букеты</h2>
+                </section>
+                <section class="Holiday-bouquets">
+                    <div class="Holiday-card">
+                        <img src="images/weeding.JPG" alt="На свадьбу" class="product-image">
+                        <h3>На свадьбу</h3>
+                        <div class="price">от 2000 ₽</div>
+                        <div class="availability">В ассортименте</div>
+                        <button class="btn">Добавить в корзину</button>
+                    </div>
+                    <div class="Holiday-card">
+                        <img src="images/other-reasons.JPG" alt="Другие поводы" class="product-image">
+                        <h3>Другие поводы</h3>
+                        <div class="price">от 1500 ₽</div>
+                        <div class="availability">В ассортименте</div>
+                        <button class="btn">Добавить в корзину</button>
+                    </div>
+                    <div class="Holiday-card">
+                        <img src="images/eternal.JPG" alt="Вечные букеты" class="product-image">
+                        <h3>Вечные букеты</h3>
+                        <div class="price">от 1200 ₽</div>
+                        <div class="availability">В ассортименте</div>
+                        <button class="btn">Добавить в корзину</button>
+                    </div>
+                </section>
+        
+                <section class="payment-options">
+                    <h2>Способы оплаты</h2>
+                    <p>Мы принимаем: 💳 Кредитная/дебетовая карта • 📱 СБП • 💰 Наличные</p>
+                </section>
+        
+                <section class="contact-section">
+                    <div class="contact-info">
+                        <h3>📞 Контакты</h3>
+                        <p>Телефон: +7 (917) 070-36-62</p>
+                        <p>Почта: aiglovaan2004@gmail.com</p>
+                        <div class="social-media">
+                            <a href="#inst">📷 Instagram</a> | 
+                            <a href="#vk">👥 ВКонтакте</a> | 
+                            <a href="#tg">📩 Телеграм</a>
+                        </div>
+                    </div>
+                    
+                    <div class="store-info">
+                        <h3>📍 Наш магазин</h3>
+                        <p>Йошкар-Ола, Машиностроителей 15</p>
+                        <p>🕒 График работы: Каждый день 9:00 - 21:00</p>
+                    </div>
+                </section>
+            </main>
+        
+            <footer>
+                <div class="footer-section">
+                    <h4>Быстрые ссылки</h4>
+                    <p><a href="#">Информация о доставке</a></p>
+                    <p><a href="#">Вопросы и ответы</a></p>
+                    <p><a href="#">Условия возврата</a></p>
+                </div>
+        
+                <div class="footer-section">
+                    <h4>Сервис</h4>
+                    <p><a href="#Holiday-bouquets">Свадебные цветы</a></p>
+                    <p><a href="#Holiday-bouquets">Корпоративные заказы</a></p>
+                    <p><a href="#Holiday-bouquets">Вечные букеты</a></p>
+                </div>
+        
+                <div class="footer-section">
+                    <h4>Дополнительно</h4>
+                    <p><a href="#politika">Политика конфиденциальности</a></p>
+                    <p><a href="#Provision of services">Предоставление услуг</a></p>
+                    <p><a href="#cookie">Настройка файлов Cookie</a></p>
+                </div>
+            </footer>
+        </body>
+        </html>
