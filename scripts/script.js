@@ -18,9 +18,23 @@ document.addEventListener("DOMContentLoaded", () => {
 *
 *Блок-схема: /images/schema.pdf
 */
-const images =document.getElementsByClassName("product-image");
-images[0].addEventListener("click", (image) => {
-    console.log('Клик отработал корректно');
-    /*image.style="transform: scale(2)"; */
+const images = document.getElementsByClassName("product-image");
+for (let i = 0; i < images.length; i++) {
+    console.log(images[i]);
 
-});
+
+    images[i].addEventListener("click", (image) => {
+        console.log('Клик отработал корректно');
+        /*image.style="transform: scale(2)"; */
+        const size = images[i].getAttribute("data-size")
+        if (size >= 2) {
+            images[i].style.setProperty('transform', 'scale(1)')
+            images[i].setAttribute("data-size", 1)
+        }
+        else {
+            images[i].style.setProperty('transform', 'scale(2)')
+            images[i].setAttribute("data-size", 2)
+        }
+
+    });
+}
