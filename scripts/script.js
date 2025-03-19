@@ -52,4 +52,22 @@ images.forEach((item) => {
     })
 });
 
-//const btn = document.getElementsByClassName("btn");
+const cart_counter = document.querySelector(".cart-counter");
+     console.log(cart_counter);
+     if (cart_counter) {
+     console.log('Константа cart_counter существует');
+
+     const cartbutton = document.querySelectorAll('.cartbutton');
+
+     let count = parseInt(cart_counter.textContent); // Начальное значение счетчика с приведением строки к числу
+     console.log(cart_counter.textContent);
+
+     // Обработчик клика на иконку
+     cartbutton.forEach((item) => {
+        item.addEventListener("click", () => {
+        count += 1; // Увеличиваем счетчик
+        cart_counter.innerHTML = count;
+        cart_counter.textContent = count; // Обновляем счетчик
+     });
+ })
+};
