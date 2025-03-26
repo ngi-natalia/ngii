@@ -36,7 +36,16 @@ overflow-x: hidden;
     transition: background-color 0.3s ease;
     margin-top: 1rem;
 }
-
+.bt {
+    padding: 0.8rem 1.5rem;
+    border-radius: 25px;
+    border: none;
+    background-color: #6b8e7e;
+    color: white;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+    margin-top: 1rem;
+}
 .btn:hover {
     background-color: #5a7a6d;
 }

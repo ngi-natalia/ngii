@@ -71,3 +71,89 @@ const cart_counter = document.querySelector(".cart-counter");
      });
  })
 };
+const btButtonModal = document.querySelector(".bt");
+const modalforms = document.querySelector(".dialog-forms");
+console.log(btButtonModal);
+console.log(modalforms);
+
+if (btButtonModal && modalforms) {
+btButtonModal.addEventListener("click", (event) => {
+    event.preventDefault();
+      modalforms.removeAttribute("hidden");
+      modalforms.scrollIntoView({ behavior: 'smooth' }); 
+    });
+}
+
+window.addEventListener("click", (event) => {
+    if (event.target === modalforms) {
+        modalforms.setAttribute("hidden", true);
+    }
+});
+//Объявляем переменную closeModalButton и сохраняем в нее кнопку c классом application__button
+const closeModalButton = document.querySelector(".application__close");
+//Для кнопки «Закрыть» добавляем обработчик события клика по этой кнопке:
+closeModalButton.addEventListener("click", () => {
+// Добавляем атрибут hidden у модального окна modalApplication и модальное окно становится невидимым
+    modalforms.setAttribute("hidden", true);
+});
+const formsButtonModal = document.querySelector(".forms");
+const modalexit = document.querySelector(".exit");
+console.log(formsButtonModal);
+console.log(modalexit);
+
+
+
+const exitButtonModal = document.querySelector(".exit");
+const modalvxod = document.querySelector(".dialog-vxod");
+console.log(exitButtonModal);
+console.log(modalvxod);
+
+if (exitButtonModal && modalvxod) {
+    exitButtonModal.addEventListener("click", (event) => {
+    event.preventDefault();
+      modalvxod.removeAttribute("hidden");
+    });
+}
+
+window.addEventListener("click", (event) => {
+    if (event.target === modalvxod) {
+        modalvxod.setAttribute("hidden", true);
+    }
+
+//Объявляем переменную closeModalButton и сохраняем в нее кнопку c классом application__button
+const closeModalButton = document.querySelector(".application__close2");
+
+//Для кнопки «Закрыть» добавляем обработчик события клика по этой кнопке:
+closeModalButton.addEventListener("click", () => {
+// Добавляем атрибут hidden у модального окна modalApplication и модальное окно становится невидимым
+    modalvxod.setAttribute("hidden", true);
+});
+});
+
+const regButtonModal = document.querySelector(".reg");
+const modalregist = document.querySelector(".dialog-regist");
+console.log(regButtonModal);
+console.log(modalregist);
+
+if (regButtonModal && modalregist) {
+    regButtonModal.addEventListener("click", (event) => {
+    event.preventDefault();
+      modalregist.removeAttribute("hidden");
+    });
+}
+
+window.addEventListener("click", (event) => {
+    if (event.target === modalregist) {
+        modalregist.setAttribute("hidden", true);
+    }
+    //Объявляем переменную closeModalButton и сохраняем в нее кнопку c классом application__button
+const closeModalButton = document.querySelector(".application__close3");
+
+//Для кнопки «Закрыть» добавляем обработчик события клика по этой кнопке:
+closeModalButton.addEventListener("click", () => {
+// Добавляем атрибут hidden у модального окна modalApplication и модальное окно становится невидимым
+    modalregist.setAttribute("hidden", true);
+});
+});
+
+
