@@ -156,4 +156,46 @@ closeModalButton.addEventListener("click", () => {
 });
 });
 
+const headerMenu = document.querySelector('.header_menu')
+if (headerMenu) {
+    const headerList = headerMenu.querySelector('.header_list');
+    const menuData = {
+        link1:{
+            link:"#menu",
+            title:'Главная',
+        },
+        link2:{
+            link:"#katalog",
+            title:'Каталог',
+        },
+        link3:{
+            link:"#for_orders",
+            title:'Букеты на заказ',
+        },
+        link4:{
+            link:"#holiday",
+            title:'Праздничные букеты',
+        },
+        link5:{
+            link:"#pay",
+            title:'Способы оплаты',
+        },
+        link6:{
+            link:"#contact",
+            title:'Контакты',
+        }
+    }
+    const createLink = (UrlLink, title) =>{
+        const link = `
+        <li class="header__item"><a href="${UrlLink}" class="header__link">${title}</a></li>
+        `;
+        return link;
 
+    }
+    for (const linkItem in menuData) {
+                    const link = menuData[linkItem];
+                    const linkIndex = createLink(link.link, link.title);
+                    headerList.insertAdjacentHTML('beforeend', linkIndex);
+                }
+        
+}

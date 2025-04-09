@@ -9,12 +9,12 @@
     gap: 0.5rem;
 }
 
-nav {
+.header_menu{
     background-color: var(--pastel-pink);
     padding: 1rem;
 }
 
-.nav-links {
+.header_list {
     display: flex;
     justify-content: center;
     gap: 2rem;
@@ -22,14 +22,14 @@ nav {
     flex-wrap: wrap;
 }
 
-.nav-links a {
+.header_list a {
     text-decoration: none;
     color: #6b5e5e;
     font-weight: 500;
     transition: color 0.3s ease;
 }
 
-.nav-links a:hover {
+.header_list a:hover {
     color: #e91e63;
 }
 .header {
