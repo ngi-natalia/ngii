@@ -1,0 +1,35 @@
+[
+    {
+        "imageUrl": [
+            "images/classic.jpg",
+            "images/rose.jpg"
+        ],
+        "imageAlt":"Цветы одного вида",
+        "imageWidth":250
+    },
+    {
+        "imageUrl":[
+            "images/long.jpg",
+            "images/longg.jpg"
+        ],
+        "imageAlt":"Букеты, которые простоят у вас долго",
+        "imageWidth":250
+    },
+    {
+        "imageUrl":[
+            "images/different.jpg",
+            "images/diff.jpg"
+        ],
+        "imageAlt":"Микс для самых оригинальных",
+        "imageWidth":250
+    },
+    {
+        "imageUrl":[
+            "images/special.jpg",
+            "images/spe.jpg"
+        ],
+        "imageAlt":"Цветы, которые скрасят ваш особый день",
+        "imageWidth":250
+    }
+]
+
