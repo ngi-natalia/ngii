@@ -243,11 +243,11 @@ if (cardsImages) {
                 // Добавление карточки на страницу  в список cardListImages  с помощью метода insertAdjacentHTML beforeend указывает, что карточка должна быть добавлена в конец списка
                 cardListImages.insertAdjacentHTML("beforeend", cardElement);
             });
-        });
 
-}
-//Объявляем переменную pictures и сохраняем в нее все изображения с классом images__picture 
+            //Объявляем переменную pictures и сохраняем в нее все изображения с классом images__picture 
 const pictures = document.querySelectorAll(".images__picture");
+console.log('pictures');
+console.log(pictures);
 if (pictures) {
     // Пройдемся по каждому элементу массива pictures, с помощью цикла forEach. 
     pictures.forEach((picture) => {
@@ -273,3 +273,23 @@ if (pictures) {
     });
 
 }
+
+        });
+
+}
+window.onload = function() {
+    setTimeout(function () {
+        const preloader = document.querySelector('.preloader');
+        const content = document.querySelector('.content');
+        
+        // Сначала скрываем предзагрузчик плавно
+        preloader.style.opacity = '0';
+        preloader.style.transition = 'opacity 0.5s ease-in-out';
+    
+        // После задержки показываем основную страницу
+        setTimeout(() => {
+            preloader.style.display = 'none'; // Полностью прячем предзагрузчик
+            content.style.display = 'block'; // Показываем контент
+        }, 500); // Время анимации перехода opacity
+    }, 2000); // Задержка перед исчезновением предзагрузчика (например, 2 секунды)
+};

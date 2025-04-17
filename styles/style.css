@@ -10,3 +10,7 @@
 @import "main.css";
 /* Подключение адаптации под мобильные устройства */
 @import "media.css";
+/* Подключение анимаций */
+@import "animation.css";
+/* Подключение предзагрузчика страницы */
+@import "preloader.css";

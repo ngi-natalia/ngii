@@ -220,3 +220,28 @@ button:hover {
 fieldset {
     border: none; /* Убираем обводку у fieldset */
 }
+.images__list {
+    display: flex; /* Используем flexbox для выравнивания карточек в строку*/
+    flex-wrap: wrap; /*Если карточки не влезут в строку, то перенос на новую*/
+
+    gap: 50px; /* промежуток между карточками */
+    justify-content: center; /* распределяем элементы по центру*/ 
+    list-style-type: none; /*убираем маркеры от списка ul*/
+    margin: 0; /*ставим в 0 пикселей внешние отступы*/
+    padding: 0; /*ставим в 0 пикселей внутренние отступы*/
+    margin-left: auto;
+    margin-right: auto;
+}
+.images__list img {
+    border-radius: 20px; /* Скругление углов картинки на 20 пикселей */
+}
+
+.images__item {
+    padding: 10px 10px;  /* Внутренние отступы: 10px сверху и снизу, 30px слева и справа */
+     border-radius: 20px; /* скругление углов на 20px*/
+    box-shadow: 0 8px 16px 0 rgba(0, 0, 0, 0.2);/*тень карточки*/
+}
+.images{
+    margin-left: auto;
+    margin-right: auto;
+}
