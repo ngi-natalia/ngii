@@ -153,6 +153,13 @@ window.addEventListener("click", (event) => {
     closeModalButton.addEventListener("click", () => {
         // Добавляем атрибут hidden у модального окна modalApplication и модальное окно становится невидимым
         modalregist.setAttribute("hidden", true);
+
+        // Запишем логин
+        window.localStorage.setItem("login", login);
+
+        // Очистка формы
+        document.getElementById('registration-form').reset();
+        
     });
 });
 
@@ -293,3 +300,24 @@ window.onload = function() {
         }, 500); // Время анимации перехода opacity
     }, 2000); // Задержка перед исчезновением предзагрузчика (например, 2 секунды)
 };
+const slider = document.querySelector('.swiper');
+
+if (slider) {
+    const swiper = new Swiper(slider, {
+        // Дополнительные параметры
+        slidesPerView: 4, // Количество слайдов на экране
+        spaceBetween: 30, // Расстояние между слайдами
+        loop: true,  // Зацикливание слайдов
+
+        // Пагинация
+        pagination: {
+            el: '.swiper-pagination',
+        },
+
+        // Навигационные стрелки
+        navigation: {
+            nextEl: '.swiper-button-next',
+            prevEl: '.swiper-button-prev',
+        },
+    });
+}
