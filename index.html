@@ -4,6 +4,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css" />
     <link rel="stylesheet" href="styles/normalize.css">
     <link rel="stylesheet" href="styles/style.css">
         <body>
@@ -36,6 +37,58 @@
                 </ul>
             </nav>
             <main>
+                <section class="section card card--slider swiper">
+                    <div class="card__list card__list--slider swiper-wrapper">
+                        <a class="card__item swiper-slide" href="#">
+                            <span class="card__icon">
+                                <img src="images/free-delivery.png" alt="free-delivery" width="100" height="100">
+                            </span>
+                            <div>
+                            <h3 class="card__title">Бесплатная доставка!</h3>
+                            <p class="card__description">При покупке от 5000 рублей</p>
+                        </div>
+                        </a>
+                        <a class="card__item swiper-slide" href="#">
+                            <span class="card__icon">
+                                <img src="images/coupon.png" alt="coupon " width="100" height="100">
+                            </span>
+                            <div>
+                            <h3 class="card__title">Скачай приложение</h3>
+                            <p class="card__description">И получи скидку при первом заказе</p>
+                        </div>
+                        </a>
+                        <a class="card__item swiper-slide" href="#">
+                            <span class="card__icon">
+                                <img src="images/like.png" alt="like "  width="150" height="150">
+                            </span>
+                            <div>
+                            <h3 class="card__title">Сияй с нашими букетамим</h3>
+                            <p class="card__description">Выкладывай истории с нашими букетами, отмечай нас и получай приятные бонусы</p>
+                            </div>
+                        </a>
+                        <a class="card__item swiper-slide" href="#">
+                            <span class="card__icon">
+                                <img src="images/smartphone.png" alt="smartphone"  width="150" height="150">
+                            </span>
+                            <div>
+                            <h3 class="card__title">Много букетов не бывает...</h3>
+                            <p class="card__description">Как и бонусов в нашей программе лояльности. Копи бонусы и обменивай их на рубли</p>
+                            </div>
+                        </a>
+                        <a class="card__item swiper-slide" href="#">
+                            <span class="card__icon">
+                                <img src="images/bouquet-flower.png" alt="bouquet-flower"  width="100" height="100">
+                            </span>
+                            <div>
+                            <h3 class="card__title">Купи 51 цветок</h3>
+                            <p class="card__description">И получи упаковку в подарок</p>
+                            </div>
+                        </a>
+                    </div>
+                    <div class="swiper-pagination"></div>
+                    <div class="swiper-button-prev"></div>
+                    <div class="swiper-button-next"></div>
+                </section>
                 <section class="images">
                     <h2 class="images_title"></h2>
                     <ul class="images__list">
@@ -243,6 +296,7 @@
                 </div>
             </footer>
             </div>
+            <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
             <script src="scripts/script.js"></script>
         </body>
         </html>
